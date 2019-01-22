@@ -565,12 +565,42 @@ span.views{
     max-width: 250px;
 
 }
-.SubtitleBox p{
+.SubtitleBox>div{
     margin: 0px;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size: 14px;
+}
+.SubtitleBox>div:hover h1,.SubtitleBox>div:hover h2,.SubtitleBox>div:hover h3,.SubtitleBox>div:hover h4,.SubtitleBox>div:hover h5,.SubtitleBox>div:hover h6{
+    color: #1abc9c !important;
+}
+
+.SubtitleBox h1,.SubtitleBox  h2,.SubtitleBox h3,.SubtitleBox h4,.SubtitleBox h5,.SubtitleBox h6{
+    margin: 0px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    font-size: 14px;
+    display: inline;
+    font-weight: normal;
+}
+.SubtitleBox h2{
+    font-weight: bold;
+}
+
+.SubtitleBox h3{
+    margin-left: 10px;
+}
+
+.SubtitleBox h4{
+    margin-left: 20px;
+}
+
+.SubtitleBox h5,.SubtitleBox h6{
+    margin-left: 30px;
 }
 .SubtitleBox:hover{
 /*    -webkit-animation: .3s addWidth;

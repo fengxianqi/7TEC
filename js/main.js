@@ -213,11 +213,11 @@ $(document).ready(function(){
 		if (allTitleNode.length > 0 ){
 			$.allTitleNode = allTitleNode;
 			$.each(allTitleNode, function () {
-				$(_this).html($(_this).html() + '<p># <a href="#" onclick="$.TitleLocation('+this.offsetTop+');" >' + $(this).text() + '</a></p>');
+				$(_this).html($(_this).html() + '<div><a href="#" onclick="$.TitleLocation('+this.offsetTop+');" ><' + $(this)[0].localName + '>' + $(this).text() + '</' + $(this)[0].localName + '></a></div>');
 			});
 		}
 		if($(comment).length > 0){
-			$(_this).html($(_this).html() + '<p><a href="#" onclick="$.TitleLocation('+$(comment).offset().top+');" ># 评论一下</a></p>');
+			$(_this).html($(_this).html() + '<div><a href="#" onclick="$.TitleLocation('+$(comment).offset().top+');" ><h2>评论一下</h2></a></div>');
 		}
 		/*if($(comment).length > 0 || allTitleNode.length > 0 ){
 			$(_this).css('visibility','visible');

@@ -36,7 +36,7 @@
 			<div class="zs-modal-pay">
 				<button class="btn btn-bred" id="pay-text">2元</button>
 				<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
-				<img width="150" height="150" src="<?php $this->options->themeUrl('img/alipay-2.jpg'); ?>" id="pay-image"/>
+				<img width="150" height="150" src="<?php $this->options->themeUrl('img/alipay_2.png'); ?>" id="pay-image"/>
 			</div>
 		</div>
 		<div class="zs-modal-footer">
