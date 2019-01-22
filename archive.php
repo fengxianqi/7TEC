@@ -39,7 +39,7 @@
             </article>
         <?php endif; ?>
 
-        <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
+        <?php $this->pageNav('&laquo; 上一页', '&raquo; 下一页'); ?>
     </div><!-- end #main -->
 
 	<?php $this->need('sidebar.php'); ?>
