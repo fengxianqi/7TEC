@@ -8,7 +8,7 @@
 <footer id="footer" class="footer" role="contentinfo">
   <em><a href="https://beian.miit.gov.cn"  target="_blank"><?php echo $this->options->beian;?></a>
     &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
-    <?php _e('由 <a href="//www.typecho.org">Typecho</a> 强力驱动.'); ?>.
+    <?php _e('由 <a href="//www.typecho.org">Typecho</a> 强力驱动.'); ?>
   </em>
 </footer><!-- end #footer -->
 

@@ -217,7 +217,7 @@ $(document).ready(function(){
 			});
 		}
 		if($(comment).length > 0){
-			$(_this).html($(_this).html() + '<div><a href="#" onclick="$.TitleLocation('+$(comment).offset().top+');" ><h2>评论一下</h2></a></div>');
+			$(_this).html($(_this).html() + '<div><a href="#" onclick="$.TitleLocation('+$(comment).offset().top+');" ></a></div>');
 		}
 		/*if($(comment).length > 0 || allTitleNode.length > 0 ){
 			$(_this).css('visibility','visible');
