@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title><?php $this->archiveTitle(array(
+    <title>test-<?php $this->archiveTitle(array(
         'category'  =>  _t('分类 %s 下的文章'),
         'search'    =>  _t('包含关键字 %s 的文章'),
         'tag'       =>  _t('标签 %s 下的文章'),
@@ -18,8 +18,8 @@
         <link rel="stylesheet" href="<?php $this->options->themeUrl('bootstrap/bootstrap.min.css'); ?>">
         <link rel="stylesheet" href="<?php $this->options->themeUrl('awesome/css/font-awesome.min.css'); ?>">
         <link rel="stylesheet" href="<?php $this->options->themeUrl('css/typo.css'); ?>">
-        <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
-        <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
+        <link rel="stylesheet" href="<?php $this->options->themeUrl('css/even.css'); ?>">
         
 
     <!--[if lt IE 9]>

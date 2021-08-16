@@ -28,7 +28,6 @@ body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset,
 /*设置HOVER动画特效*/
 a, a:hover, input, input:hover, button, button:hover, .ico a, .fade, .widget-item li, .widget-item li:hover, .banner .dots li {
     transition: all .28s cubic-bezier(.4,0,.2,1);
-    /* -webkit-transition: all .28s cubic-bezier(.4,0,.2,1); */
     -moz-transition: all .28s cubic-bezier(.4,0,.2,1);
 }
 
@@ -149,9 +148,8 @@ a:hover {
 }
 
 .typo a:hover {
-  border-bottom-color:  #1abc9c;
   color:  #1abc9c;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* 默认不显示下划线，保持页面简洁 */
@@ -247,24 +245,28 @@ strong, b {
 /* 保证块/段落之间的空白隔行 */
 .typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr, .typo table,
 .typo-p, .typo-pre, .typo-ul, .typo-ol, .typo-dl, .typo-form, .typo-hr, .typo-table, blockquote {
-  margin-bottom: 1.2em
+  margin-bottom: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.typo li {
+  margin-bottom: 4px;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
   font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
   line-height: 1.35;
       font-weight: bold;
     color: #333;
-}
+} */
 
 /* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
 .typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6,
 .typo-h1, .typo-h2, .typo-h3, .typo-h4, .typo-h5, .typo-h6 {
-  margin-top: 1.2em;
-  margin-bottom: 0.6em;
+  margin-top: 20px;
+  margin-bottom: 10px;
   line-height: 1.35;
 }
-
+/* 
 .typo h1, .typo-h1 {
   font-size: 2em;
 }
@@ -283,10 +285,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .typo h5, .typo h6, .typo-h5, .typo-h6 {
   font-size: 1.2em;
-}
+} */
 
 /* 在文章中，应该还原 ul 和 ol 的样式 */
 .typo ul, .typo-ul {
+  margin-left: 1.3em;
+  list-style: disc;
+}
+/* .typo ul, .typo-ul {
   margin-left: 1.3em;
   list-style: disc;
 }
@@ -303,10 +309,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .typo li ul, .typo-ul ul, .typo-ol ul {
   list-style: circle;
-}
+} */
 
 /* 同 ul/ol，在文章中应用 table 基本格式 */
-.typo table th, .typo table td, .typo-table th, .typo-table td, .typo table caption {
+/* .typo table th, .typo table td, .typo-table th, .typo-table td, .typo table caption {
   border: 1px solid #ddd;
   padding: 0.5em 1em;
   color: #666;
@@ -322,10 +328,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .typo table caption {
   border-bottom: none;
-}
+} */
 
 /* 去除 webkit 中 input 和 textarea 的默认样式  */
-.typo-input, .typo-textarea {
+/* .typo-input, .typo-textarea {
   -webkit-appearance: none;
   border-radius: 0;
 }
@@ -333,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 .typo-em, .typo em, legend, caption {
   color: #000;
   font-weight: inherit;
-}
+} */
 
 /* 着重号，只能在少量（少于100个字符）且全是全角字符的情况下使用 */
 .typo-em {
@@ -353,4 +359,31 @@ h1, h2, h3, h4, h5, h6 {
 /* Responsive images */
 .typo img {
   max-width: 100%;
+}
+
+
+::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+  -webkit-border-radius: 0
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px
+}
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #b8b8b8;
+  -webkit-border-radius: 6px;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+  border: 2px solid #fff;
+  filter: alpha(opacity = 50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5
+}
+::-webkit-scrollbar-thumb:hover {
+  height: 50px;
+  background-color: #878987;
+  -webkit-border-radius: 6px
 }
