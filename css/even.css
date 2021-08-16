@@ -379,7 +379,8 @@ body {
   color: #34495e;
   background: #fefefe;
   scroll-behavior: smooth;
-  border-top: 3px solid #c05b4d; }
+  /* border-top: 3px solid #c05b4d; */
+ }
   body.hide-top {
     border-top: 3px solid transparent; }
 
